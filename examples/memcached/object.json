@@ -1,0 +1,23 @@
+{
+    "test-a": true,
+    "test-b": false,
+    "test-c": 1,
+    "test-d": 0,
+    "test-e": "true",
+    "test-f": "false",
+    "test-g": "1",
+    "test-h": "0",
+    "test-i": "on",
+    "test-j": "off",
+    "test-k": "t",
+    "test-l": "f",
+    "test-m": "y",
+    "test-n": "n",
+    "test-o": "yes",
+    "test-p": "no",
+    "test-q": {
+        "q1": 1,
+        "q2": 2
+    },
+    "test-r": null
+}
