@@ -1,6 +1,6 @@
 {
   "name": "underflag-memcached",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "memcached provider for underflag",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
     "memcached"
   ],
   "author": "Diego Souza",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dieg0s0uza/underflag-memcached/issues"
   },
@@ -49,7 +49,7 @@
     "@types/memjs": "^1.2.3"
   },
   "dependencies": {
-    "underflag": "^1.0.0",
-    "memjs": "^1.3.0"
+    "memjs": "^1.3.0",
+    "underflag": "^1.3.0"
   }
 }
