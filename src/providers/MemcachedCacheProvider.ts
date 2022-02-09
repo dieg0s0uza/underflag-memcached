@@ -1,4 +1,4 @@
-import { ICacheProvider, DataModel } from 'underflag';
+import { ICacheProvider, Feature } from 'underflag';
 
 interface Options {
     /** A client instance to Memcached */
@@ -14,11 +14,11 @@ export class MemcachedCacheProvider implements ICacheProvider {
         this.client = options.client;
         this.lifetime = options.lifetime || 3600;
     }
-    async get(key: string): Promise<DataModel | undefined> {
+    async get(key: string): Promise<Feature | undefined> {
         const { value } = await this.client.get(key);
         return value ? { key, value: JSON.parse(value) } : undefined;
     }
-    async set(data: DataModel): Promise<void> {
+    async set(data: Feature): Promise<void> {
         await this.client.set(data.key, JSON.stringify(data.value), { expires: this.lifetime });
     }
 }
