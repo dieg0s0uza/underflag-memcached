@@ -1,6 +1,6 @@
 {
   "name": "underflag-memcached",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "memcached provider for underflag",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -47,12 +47,12 @@
     "ts-jest": "^27.0.7",
     "tslint": "^6.1.3",
     "typescript": "^4.5.2",
-    "underflag": "^2.0.0"
+    "underflag": "^2.1.0"
   },
   "dependencies": {
     "memjs": "^1.3.0"
   },
   "peerDependencies": {
-    "underflag": "^2.0.0"
+    "underflag": "^2.1.0"
   }
 }

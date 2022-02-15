@@ -1,4 +1,4 @@
-import { Underflag, JsonDataProvider, isOn } from 'underflag';
+import { Underflag, JsonDataProvider } from 'underflag';
 import { MemcachedCacheProvider } from '../../src/providers/MemcachedCacheProvider';
 import memjs from 'memjs';
 import config from './config.json';
@@ -8,7 +8,7 @@ const print = async (feature: Underflag, key: string) => {
     const data = await feature.getFeature(key);
     return {
         key,
-        status: isOn(data) ? 'on' : 'off',
+        status: data?.isOn() ? 'on' : 'off',
         value: data?.value,
         origin: data?.origin
     };
